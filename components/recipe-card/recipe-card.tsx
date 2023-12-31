@@ -27,22 +27,15 @@ const RecipeCard: React.FC<RecipeCardProps> = ({
         <span className="block text-gray-500 text-sm">{`Recipe by ${creator}`}</span>
       </div>
       <div className={classes.badge}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          className="w-5 inline-block"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-          />
-        </svg>
+        <Image
+          src="/clock.svg"
+          alt="Clock Icon"
+          width={20}
+          height={20}
+          className="inline-block"
+        />
 
-        <span>{`${time} mins`}</span>
+        <span className="pl-1">{`${time} mins`}</span>
       </div>
     </div>
   );

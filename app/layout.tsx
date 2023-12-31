@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning={true} className="text-gray-600 font-body">
-        <div className="grid md:grid-cols-3">
+        <div className="grid md:grid-cols-3 h-screen">
           <MainHeader />
           {children}
         </div>

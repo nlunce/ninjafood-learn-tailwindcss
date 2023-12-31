@@ -6,13 +6,13 @@ export default function Home() {
       <div className="flex justify-center md:justify-end">
         <a
           href="#"
-          className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white"
+          className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
         >
           Log in
         </a>
         <a
           href="#"
-          className="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white"
+          className="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
         >
           Sign up
         </a>
@@ -35,7 +35,7 @@ export default function Home() {
         </h4>
         <div className="mt-8"></div>
         <div className="flex justify-center">
-          <div className="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">
+          <div className="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
             Load more
           </div>
         </div>
