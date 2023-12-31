@@ -1,35 +1,43 @@
-import Image from "next/image";
-import stew from "@/assets/stew.jpg";
+import RecipeCardCollection from "@/components/recipe-card-collection/recipe-card-collection";
 
 export default function Home() {
   return (
-    <main className="text-yellow-400">
-      <div>
-        <a href="#">Log in</a>
-        <a href="#">Sign up</a>
+    <main className="px-16 py-6 bg-gray-100 md:col-span-2">
+      <div className="flex justify-center md:justify-end">
+        <a
+          href="#"
+          className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white"
+        >
+          Log in
+        </a>
+        <a
+          href="#"
+          className="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white"
+        >
+          Sign up
+        </a>
       </div>
 
       <header>
-        <h2>Recipes</h2>
-        <h3>For Ninjas</h3>
+        <h2 className="text-gray-700 text-6xl font-semibold">Recipes</h2>
+        <h3 className="text-2xl font-semibold">For Ninjas</h3>
       </header>
 
       <div>
-        <h4>Latest Recipes</h4>
+        <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">
+          Latest Recipes
+        </h4>
 
-        <div>
-          <div>
-            <Image src={stew} alt="Stew" />
-            <div>
-              <span>5 Bean Chilli Stew</span>
-              <span>Recipe by Mario</span>
-            </div>
+        <RecipeCardCollection />
+
+        <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">
+          Most Popular
+        </h4>
+        <div className="mt-8"></div>
+        <div className="flex justify-center">
+          <div className="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">
+            Load more
           </div>
-        </div>
-        <h4>Most Popular</h4>
-        <div></div>
-        <div>
-          <div>Load more</div>
         </div>
       </div>
     </main>
